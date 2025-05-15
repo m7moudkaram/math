@@ -90,9 +90,3 @@ summary = df.agg({
     'Exam Score': ['mean', 'max', 'min']
 })
 print("\nCustom Aggregation:\n", summary)
-
-print("\nPerformance Level Counts:\n", df['Performance Level'].value_counts())
-print("\nStudy Efficiency Counts:\n", df['Study Efficiency'].value_counts())
-
-# Optional: Save cleaned and enriched data
-df.to_csv('cleaned_students_data.csv', index=False)
